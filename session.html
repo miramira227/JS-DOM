@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel = "stylesheet" type = "text/css" href = "hi.css"> 
+</head>
+<body>
+    <div class='title'>
+        <div><h1>오 바뀐다 오오오</h1></div>
+    </div>
+    <script>
+        let h1 = document.querySelector('h1');
+        let body = document.querySelector('body');
+        
+        setInterval(function() {
+            var x = Math.floor(Math.random() * 256)
+            var y = Math.floor(Math.random() * 256)
+            var z = Math.floor(Math.random() * 256)
+            var bgColor = "rgb("+x+","+y+","+z+")"
+            var h1Color = "rgb("+z+","+y+","+x+")"
+            body.style.backgroundColor = bgColor
+            h1.style.color = h1Color
+        }, 100)
+    </script>
+</body>
+</html>
